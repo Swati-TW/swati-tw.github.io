@@ -1,9 +1,9 @@
 # APIMAN #
 
-Apiman consists of two primary components: 
-+ API Manager 
+Apiman - Application management consists of two primary components: 
++ API Manager:  
 The API Manager is a set of REST endpoints and a **User Interface**, and is used to manage and configure all of the APIs being provided and the clients consuming them.
-+ API Gateway
++ API Gateway: 
 The API Gateway applies the configured governance policies at runtime to every API request from every registered client.
 ## API Manager Concepts
 The API Manager is used to configure APIs and connect them to consumers. It is where providers go to configure the APIs they would like to manage, and it’s also where API consumers go to find APIs to consume.
