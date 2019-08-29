@@ -13,7 +13,7 @@ An **Organization** is simply an entity within which everything else is containe
 ### Service
 When an API provider wishes to manage one of their APIs, they do so by creating a **Service within** the Organization. The Service is given a name and description, along with details about the API’s implementation endpoint. The Service can also be given a set of Policies, which will be applied by the API Gateway whenever the Service is invoked. More about Policies a little bit later.
 ### Plan
-Before a Service can be consumed, it must be available to consumers through a Service Plan. A Plan is simply a collection of Policies that are applied whenever a Service is invoked through that particular Plan.
+Before a Service can be consumed, it must be available to consumers through a **Service Plan**. A Plan is simply a collection of Policies that are applied whenever a Service is invoked through that particular Plan.
 Because a Service can be consumed through multiple Plans, the Plan provides a convenient place to configure different levels of access. A typical example would be having multiple Plans, each with a different Rate Limit Policy configured.
 ### Application
 When consuming APIs an Application _must_ be created in the API Manager. _An Application is typically a representation of an API client of some kind, perhaps a mobile app or an integration application_. The Application is given a name and a description. Applications can also have configured Policies, which are applied whenever the Application invokes any Service.
