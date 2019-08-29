@@ -1,5 +1,7 @@
 # APIMAN #
 
+_This is an introduction of Apiman._
+
 Apiman - Application management consists of two primary components: 
 + API Manager:  
 The API Manager is a set of REST endpoints and a **User Interface**, and is used to manage and configure all of the APIs being provided and the clients consuming them.
@@ -16,7 +18,7 @@ When an API provider wishes to manage one of their APIs, they do so by creating 
 Before a Service can be consumed, it must be available to consumers through a **Service Plan**. A Plan is simply a collection of Policies that are applied whenever a Service is invoked through that particular Plan.
 Because a Service can be consumed through multiple Plans, the Plan provides a convenient place to configure different levels of access. A typical example would be having multiple Plans, each with a different Rate Limit Policy configured.
 ### Application
-When consuming APIs an Application _must_ be created in the API Manager. _An Application is typically a representation of an API client of some kind, perhaps a mobile app or an integration application_. The Application is given a name and a description. Applications can also have configured Policies, which are applied whenever the Application invokes any Service.
+When consuming APIs an Application must be created in the API Manager. An Application is typically a representation of an API client of some kind, perhaps a mobile app or an integration application. The Application is given a name and a description. Applications can also have configured Policies, which are applied whenever the Application invokes any Service.
 ### Contract
 Once an Application is created, APIs can be consumed by creating **Contracts** between the Application and the Services it wishes to invoke. A Contract is simply a link between an Application and a Service through one of the Service’s available Plans.
 ### Policy
