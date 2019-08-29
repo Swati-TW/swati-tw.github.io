@@ -11,7 +11,7 @@ The API Manager is used to configure APIs and connect them to consumers. It is w
 ### Organization
 An **Organization** is simply an entity within which everything else is contained. A user must be a member of an Organization in order to manage any of the entities contained within it. Membership in an Organization is role based, so different users may be granted different capabilities within it.
 ### Service
-When an API provider wishes to manage one of their APIs, they do so by creating a **Service within** the Organization. The Service is given a name and description, along with details about the API’s implementation endpoint. The Service can also be given a set of Policies, which will be applied by the API Gateway whenever the Service is invoked. More about Policies a little bit later.
+When an API provider wishes to manage one of their APIs, they do so by creating a **Service within** the Organization. The Service is given a name and description, along with details about the API’s implementation endpoint. The Service can also be given a set of Policies, which will be applied by the API Gateway whenever the Service is invoked. 
 ### Plan
 Before a Service can be consumed, it must be available to consumers through a **Service Plan**. A Plan is simply a collection of Policies that are applied whenever a Service is invoked through that particular Plan.
 Because a Service can be consumed through multiple Plans, the Plan provides a convenient place to configure different levels of access. A typical example would be having multiple Plans, each with a different Rate Limit Policy configured.
